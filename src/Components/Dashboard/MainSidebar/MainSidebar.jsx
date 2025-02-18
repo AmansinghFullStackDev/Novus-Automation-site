@@ -27,18 +27,20 @@ const MainSidebar = () => {
     <section className='h-full w-full flex flex-col'>
 
       {/* for sidebar header */}
-      <div className='mx-8 rounded mt-3'>
-        <div className='px-6 '>
-          <img src={profile} alt="Novus profile"
-            className='w-[152px] h-auto rounded-lg'
+      <div className='mx-8 mt-3'>
+        <div className='px-6'>
+          <img
+            src={profile}
+            alt="Novus profile"
+            className="w-full h-auto"
           />
         </div>
       </div>
 
       {/* for sidebar content */}
-      <div className='h-full w-full bg-red-600 px-6 py-10 space-y-12 max-h-screen overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent custom-scrollbar'>
+      <div className='h-full w-full px-6 py-10 space-y-12 max-h-screen overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent custom-scrollbar'>
 
-        {/* Home content  */}
+        {/* Home items  */}
         <div className=''>
           <ul className='space-y-2'>
             <li>
@@ -49,6 +51,7 @@ const MainSidebar = () => {
                 HOME
               </h1>
             </li>
+
             <li>
               {/* "https://www.novusapl.com/" */}
               <NavLink to="" className={({ isActive }) => `flex px-3 gap-2 py-2 my-1 rounded-lg 
@@ -212,7 +215,7 @@ const MainSidebar = () => {
               </NavLink>
             </li>
             <li>
-            <NavLink
+              <NavLink
                 to=""
                 className={({ isActive }) =>
                   `px-3 gap-2 py-2 my-1 rounded-lg flex flex-col 
