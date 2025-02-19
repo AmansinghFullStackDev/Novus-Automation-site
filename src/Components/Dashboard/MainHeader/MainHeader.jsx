@@ -11,23 +11,35 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import { IoMoonOutline } from "react-icons/io5";
 import ShoppingBasketOutlinedIcon from '@mui/icons-material/ShoppingBasketOutlined';
 import NotificationsActiveOutlinedIcon from '@mui/icons-material/NotificationsActiveOutlined';
+import SearchModal from './SearchModal';
 
 const MainHeader = ({ toggleSidebar }) => {
 
+  const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
+
+  const hanleOpen = () => setIsSearchModalOpen(!isSearchModalOpen);
+
   return (
     <section className='h-full w-full flex items-center'
-      style={{ fontFamily: '"Plus Jakarta Sans",sans-serif', color: '#5a6a85', fontSize: '14px' }}>
+      style={{ fontFamily: '"Plus Jakarta Sans",sans-serif', color: '#5a6a85' }}>
 
       {/* !st part */}
-      <ul className='flex' style={{ color: '#2a3547' }}>
+      <ul className='flex gap-1' style={{ color: '#2a3547' }}>
 
-        <li className='menu-icon h-12 w-12 flex items-center justify-center rounded-full hover:bg-[#5d87ff1a] hover:text-[#5d87ff]' onClick={toggleSidebar}>
-          <LuMenu className='text-[20px]'/>
+        <li className='menu-icon h-16 w-16 flex items-center justify-center rounded-full hover:bg-[#5d87ff1a] hover:text-[#5d87ff]' onClick={toggleSidebar}>
+          <LuMenu className='text-[30px]' />
         </li>
 
-        <li className='search-icon h-12 w-12 flex items-center justify-center rounded-full hover:bg-[#5d87ff1a] hover:text-[#5d87ff]'>
-          <GoSearch className='text-[20px]' />
+        <li className="search-icon h-16 w-16 flex items-center justify-center rounded-full hover:bg-[#5d87ff1a]"
+          onClick={() => setIsSearchModalOpen(!isSearchModalOpen)}
+        >
+          <GoSearch className="text-[30px] hover:text-[#5d87ff]" />
+          <SearchModal
+            isOpen={isSearchModalOpen}
+            onClose={() => setIsSearchModalOpen(false)}
+          />
         </li>
+
       </ul>
 
       {/* 2nd part */}

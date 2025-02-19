@@ -38,7 +38,14 @@ const MainSidebar = () => {
       </div>
 
       {/* for sidebar content */}
-      <div className='h-full w-full px-6 py-10 space-y-12 max-h-screen overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent custom-scrollbar'>
+      <div className='h-full w-full px-6 py-8 text-[30px] space-y-12 max-h-screen hover:overflow-y-auto 
+      [&::-webkit-scrollbar]:w-2
+  [&::-webkit-scrollbar-track]:rounded-full
+  [&::-webkit-scrollbar-track]:bg-gray-100
+  [&::-webkit-scrollbar-thumb]:rounded-full
+  [&::-webkit-scrollbar-thumb]:bg-gray-300
+  dark:[&::-webkit-scrollbar-track]:bg-neutral-700
+  dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500'>
 
         {/* Home items  */}
         <div className=''>
@@ -54,17 +61,21 @@ const MainSidebar = () => {
 
             <li>
               {/* "https://www.novusapl.com/" */}
-              <NavLink to="" className={({ isActive }) => `flex px-3 gap-2 py-2 my-1 rounded-lg 
-              hover:bg-[#5d87ff1a] mt-4
-              ${isActive ? "hover:bg-red-400" : "hover:bg-[#5d87ff] "}`
+              <NavLink to="https://www.novusapl.com/" 
+              className={({ isActive }) => `flex px-3 gap-2 py-2 my-1 rounded-lg mt-0
+              hover:bg-[#5d87ff1a] hover:text-[#5d87ff]
+              ${isActive ? "" : "hover:bg-[#5d87ff] hover:text-white"}`
               }>
                 <HiOutlineSupport />
-                <h1 style={{ fontSize: '14px', fontFamily: "'Plus Jakarta Sans', sans-serif", color: '#2A3547', fontWeight: 400 }}>Modern</h1>
+                <h1 className=''
+                style={{ fontSize: '14px', fontFamily: "'Plus Jakarta Sans', sans-serif", color: '#2A3547', fontWeight: 400 }}>Modern</h1>
               </NavLink>
             </li>
             <li>
-              <NavLink to="" className={({ isActive }) => `flex px-3 gap-2 py-2 my-1 rounded-lg
-               ${isActive ? "bg-yellow-400 text-black font-bold" : "hover:bg-gray-700"}`
+              <NavLink to="" 
+              className={({ isActive }) => `flex px-3 gap-2 py-2 my-1 rounded-lg 
+              hover:bg-[#5d87ff1a] hover:text-[#5d87ff]
+               ${isActive ? "" : "hover:bg-[#5d87ff]"}`
               }>
                 <BsCart3 />
                 <h1 style={{ fontSize: '14px', fontFamily: "'Plus Jakarta Sans', sans-serif", color: '#2A3547', fontWeight: 400 }}>eCommerce</h1>

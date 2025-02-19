@@ -12,23 +12,74 @@ import { CiGrid41 } from "react-icons/ci";
 
 const Collapsed = () => {
     return (
-        <section className='h-full w-full'>
+        <section className='h-full w-full px-2 py-2'>
 
-            {/* for sidebar */}
-            <div className='h-full w-full bg-green-500 px-4'>
+            {/* for collapsed sidebar */}
+            <div className='h-full flex flex-col gap-8'>
+                <div>
+                    <img className=''
+                        src={logo} alt="Novus" />
+                </div>
+                <ul className='flex flex-col items-center justify-center gap-6 text-[30px] overflow-y-auto
+                [&::-webkit-scrollbar]:w-2
+  [&::-webkit-scrollbar-track]:rounded-full
+  [&::-webkit-scrollbar-track]:bg-gray-100
+  [&::-webkit-scrollbar-thumb]:rounded-full
+  [&::-webkit-scrollbar-thumb]:bg-gray-300
+  dark:[&::-webkit-scrollbar-track]:bg-neutral-700
+  dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500'>
 
-                {/* header */}
-                <a href="https://www.novusapl.com/" target="_blank" rel="noopener noreferrer">
-                    <button className='flex items-center justify-center rounded-full p-3 bg-gray-100 hover:bg-gray-200'>
-                        <img
-                            className='w-26 h-16'
-                            src={logo} alt="Novus logo" />
-                    </button>
-                </a>
-
-                {/* for Home */}
-                <ul className='bg-red-500 flex flex-col items-center justify-center'>
-                    <li><TbDots /></li>
+                    <li className='mt-10'>
+                        <TbDots />
+                    </li>
+                    <li>
+                        <HiOutlineSupport />
+                    </li>
+                    <li>
+                        <BsCart3 />
+                    </li>
+                    <li>
+                        <TbCurrencyDollar />
+                    </li>
+                    <li>
+                        <TbCpu />
+                    </li>
+                    <li>
+                        <TbActivityHeartbeat />
+                    </li>
+                    <li>
+                        <MdOutlineQueueMusic />
+                    </li>
+                    <li>
+                        <CiGrid41 />
+                    </li>
+                    <li>
+                        <TbDots />
+                    </li>
+                    <li>
+                        <HiOutlineSupport />
+                    </li>
+                    <li>
+                        <BsCart3 />
+                    </li>
+                    <li>
+                        <TbCurrencyDollar />
+                    </li>
+                    <li>
+                        <TbCpu />
+                    </li>
+                    <li>
+                        <TbActivityHeartbeat />
+                    </li>
+                    <li>
+                        <MdOutlineQueueMusic />
+                    </li>
+                    <li>
+                        <CiGrid41 />
+                    </li>
+                    <li>
+                        <TbDots />
+                    </li>
                     <li>
                         <HiOutlineSupport />
                     </li>
@@ -53,32 +104,6 @@ const Collapsed = () => {
 
                 </ul>
 
-                {/* for Apps */}
-                <ul className='bg-red-900'>
-                    <li><TbDots /></li>
-                    <li>
-                        <HiOutlineSupport />
-                    </li>
-                    <li>
-                        <BsCart3 />
-                    </li>
-                    <li>
-                        <TbCurrencyDollar />
-                    </li>
-                    <li>
-                        <TbCpu />
-                    </li>
-                    <li>
-                        <TbActivityHeartbeat />
-                    </li>
-                    <li>
-                        <MdOutlineQueueMusic />
-                    </li>
-                    <li>
-                        <CiGrid41 />
-                    </li>
-
-                </ul>
             </div>
 
         </section>
