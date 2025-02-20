@@ -56,21 +56,105 @@ const SearchModal = ({ isOpen, onClose }) => {
                 </div>
 
                 {/* List part */}
-                <div className='text-[30px] px-3 mt-8'>
-                    <h2 className='text-[#2a3547]'>Quick Page Links</h2>
-                    <ul className=' overflow-y-auto mt-5'>
-                        <li>
-                            <button className='hover:bg-gray-500 flex flex-sta'>
+                <div className='h-[420px] overflow-y-auto mt-3 [&::-webkit-scrollbar]:w-2
+  [&::-webkit-scrollbar-track]:rounded-full
+  [&::-webkit-scrollbar-track]:bg-gray-100
+  [&::-webkit-scrollbar-thumb]:rounded-full
+  [&::-webkit-scrollbar-thumb]:bg-gray-300
+  dark:[&::-webkit-scrollbar-track]:bg-neutral-700
+  dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500'>
+                    <div className='text-[30px] px-3'>
+                        <h2 className='text-[#2a3547]'>Quick Page Links</h2>
+                        <ul className='mt-5'>
+                            <li className='flex items-center justify-center'>
+                                <LuDot style={{ fontSize: 36 }} />
+                                <button className='w-full flex flex-col items-start hover:bg-[#f6f9fc]
+                             p-3 rounded-xl'
+                                    style={{ fontFamily: '"Plus Jakarta Sans",sans-serif' }}>
+                                    <h6 className='text-[#2a3547] text-xl'>Modern</h6>
+                                    <h6 className='text-[#5a6a85bf] text-lg'>
+                                        /dashboards/dashboard1
+                                    </h6>
 
-                                <h6 className='text-[#2a3547] text-sm bg-red-600'>Modern</h6>
-                                <h6 className='text-[#5a6a85bf] text-xs bg-red-700'>
-                                    /dashboards/dashboard1
-                                </h6>
+                                </button>
+                            </li>
+                            <li className='flex items-center justify-center'>
+                                <LuDot style={{ fontSize: 36 }} />
+                                <button className='w-full flex flex-col items-start hover:bg-[#f6f9fc]
+                             p-3 rounded-xl'
+                                    style={{ fontFamily: '"Plus Jakarta Sans",sans-serif' }}>
+                                    <h6 className='text-[#2a3547] text-xl'>Modern</h6>
+                                    <h6 className='text-[#5a6a85bf] text-lg'>
+                                        /dashboards/dashboard1
+                                    </h6>
 
-                            </button>
-                        </li>
-                    </ul>
+                                </button>
+                            </li>
+                            <li className='flex items-center justify-center'>
+                                <LuDot style={{ fontSize: 36 }} />
+                                <button className='w-full flex flex-col items-start hover:bg-[#f6f9fc]
+                             p-3 rounded-xl'
+                                    style={{ fontFamily: '"Plus Jakarta Sans",sans-serif' }}>
+                                    <h6 className='text-[#2a3547] text-xl'>Modern</h6>
+                                    <h6 className='text-[#5a6a85bf] text-lg'>
+                                        /dashboards/dashboard1
+                                    </h6>
+
+                                </button>
+                            </li>
+                            <li className='flex items-center justify-center'>
+                                <LuDot style={{ fontSize: 36 }} />
+                                <button className='w-full flex flex-col items-start hover:bg-[#f6f9fc]
+                             p-3 rounded-xl'
+                                    style={{ fontFamily: '"Plus Jakarta Sans",sans-serif' }}>
+                                    <h6 className='text-[#2a3547] text-xl'>Modern</h6>
+                                    <h6 className='text-[#5a6a85bf] text-lg'>
+                                        /dashboards/dashboard1
+                                    </h6>
+
+                                </button>
+                            </li>
+                            <li className='flex items-center justify-center'>
+                                <LuDot style={{ fontSize: 36 }} />
+                                <button className='w-full flex flex-col items-start hover:bg-[#f6f9fc]
+                             p-3 rounded-xl'
+                                    style={{ fontFamily: '"Plus Jakarta Sans",sans-serif' }}>
+                                    <h6 className='text-[#2a3547] text-xl'>Modern</h6>
+                                    <h6 className='text-[#5a6a85bf] text-lg'>
+                                        /dashboards/dashboard1
+                                    </h6>
+
+                                </button>
+                            </li>
+                            <li className='flex items-center justify-center'>
+                                <LuDot style={{ fontSize: 36 }} />
+                                <button className='w-full flex flex-col items-start hover:bg-[#f6f9fc]
+                             p-3 rounded-xl'
+                                    style={{ fontFamily: '"Plus Jakarta Sans",sans-serif' }}>
+                                    <h6 className='text-[#2a3547] text-xl'>Modern</h6>
+                                    <h6 className='text-[#5a6a85bf] text-lg'>
+                                        /dashboards/dashboard1
+                                    </h6>
+
+                                </button>
+                            </li>
+                            <li className='flex items-center justify-center'>
+                                <LuDot style={{ fontSize: 36 }} />
+                                <button className='w-full flex flex-col items-start hover:bg-[#f6f9fc]
+                             p-3 rounded-xl'
+                                    style={{ fontFamily: '"Plus Jakarta Sans",sans-serif' }}>
+                                    <h6 className='text-[#2a3547] text-xl'>Modern</h6>
+                                    <h6 className='text-[#5a6a85bf] text-lg'>
+                                        /dashboards/dashboard1
+                                    </h6>
+
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+
+                
             </div>
         </section>
     );

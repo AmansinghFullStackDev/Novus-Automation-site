@@ -43,53 +43,56 @@ const MainHeader = ({ toggleSidebar }) => {
       </ul>
 
       {/* 2nd part */}
-      {/* <ul className='flex gap-5'>
-        <li className='h-16 w-16 flex items-center justify-center mx-1.5 rounded-full hover:bg-[#5d87ff1a] hover:text-[#5d87ff]'>
+      <div className='flex items-center justify-center gap-1 text-xl mx-6'>
+        <div className='h-12 w-28 flex items-center justify-center rounded-lg hover:bg-[#5d87ff1a] hover:text-[#5d87ff]'>
           <h6>Apps</h6>
           <MdKeyboardArrowDown />
-        </li>
+        </div>
+        <ul className='flex items-center justify-center gap-10'>
+          <li className='flex items-center justify-center p-2'>
+            <h6 className='hover:text-[#5d87ff]'>Chat</h6>
+          </li>
+          <li className='h-16 w-16 flex items-center justify-center p-2'>
+            <h6 className='hover:text-[#5d87ff]'>Calendar</h6>
+          </li>
+          <li className='h-16 w-16 flex items-center justify-center p-2'>
+            <h6 className='hover:text-[#5d87ff]'>Email</h6>
+          </li></ul>
 
-        <li className='h-16 w-16 flex items-center justify-center mx-1.5 rounded-full hover:bg-[#5d87ff1a] hover:text-[#5d87ff]'>
-          <h6>Chat</h6>
-        </li>
-        <li className='h-16 w-16 flex items-center justify-center mx-1.5 rounded-full hover:bg-[#5d87ff1a] hover:text-[#5d87ff]'>
-          <h6>Calendar</h6>
-        </li>
-        <li className='h-16 w-16 flex items-center justify-center mx-1.5 rounded-full hover:bg-[#5d87ff1a] hover:text-[#5d87ff]'>
-          <h6>Email</h6>
-        </li>
-      </ul> */}
+      </div>
 
       {/* 3rd part */}
-      {/* <ul className='bg-red-500 flex items-center'>
+      <div className=''>
+        <ul className='bg-red-500 flex items-center'>
 
-        <li>
-          <IoMoonOutline />
-        </li>
-        <li>
-          <img src={indianFlag} alt="flag"
-            className='w-8 h-8 rounded-full'
-          />
-        </li>
-        <li>
-          <Badge color="warning" badgeContent={4}>
-            <ShoppingBasketOutlinedIcon />
-          </Badge>
-        </li>
-        <li>
-          <Badge color="primary" variant='dot'>
-            <NotificationsActiveOutlinedIcon />
-          </Badge>
-        </li>
-        <li>
-          <div className=''>
-            <img src={user1} alt=""
-              className='rounded-full bg-purple-200 w-10 h-10'
+          <li>
+            <IoMoonOutline />
+          </li>
+          <li>
+            <img src={indianFlag} alt="flag"
+              className='w-8 h-8 rounded-full'
             />
-          </div>
-        </li>
+          </li>
+          <li>
+            <Badge color="warning" badgeContent={4}>
+              <ShoppingBasketOutlinedIcon />
+            </Badge>
+          </li>
+          <li>
+            <Badge color="primary" variant='dot'>
+              <NotificationsActiveOutlinedIcon />
+            </Badge>
+          </li>
+          <li>
+            <div className=''>
+              <img src={user1} alt=""
+                className='rounded-full bg-purple-200 w-10 h-10'
+              />
+            </div>
+          </li>
 
-      </ul> */}
+        </ul>
+      </div>
 
     </section>
   )
