@@ -18,7 +18,7 @@ const Dashboard = () => {
         <main className='bg-[#ffffff] h-screen w-full flex'>
 
             <div className={`flex h-full border-r-2 border-[#ebf1f6] shadow-2xl 
-            ${isCollapsed ? isExpanded ? 'w-[450px]' : 'w-[120px]' : 'w-[400px]'}`}>
+            ${isCollapsed ? isExpanded ? 'w-[350px]' : 'w-[80px]' : 'w-[350px]'}`}>
 
                 {/* for Sidebar start*/}
                 {!isCollapsed ?
@@ -36,8 +36,8 @@ const Dashboard = () => {
                         onMouseEnter={() => setIsExpanded(true)}
                         onMouseLeave={() => setIsExpanded(false)}
                         style={{ 
-                            transition: "all 0.9s ease-in-out",
-                            transitionDelay:'150ms',
+                            transition: "all 10s ease-in-out",
+                            transitionDelay:'1000ms',
                              height: "100vh" }}
                     >
                        {isExpanded ? <ExpandSidebar /> : <CollapsedSidebar />}
@@ -47,7 +47,7 @@ const Dashboard = () => {
 
             <div className='h-full w-full'>
                 {/* for Header */}
-                <header className='h-[77px] w-full px-5'>
+                <header className='h-[65px] w-full px-5'>
                     <MainHeader toggleSidebar={toggleSidebar} />
                 </header>
 

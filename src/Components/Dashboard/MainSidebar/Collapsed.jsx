@@ -20,7 +20,7 @@ const Collapsed = () => {
                     <img className=''
                         src={logo} alt="Novus" />
                 </div>
-                <ul className='flex flex-col items-center gap-6 text-[30px] overflow-hidden'>
+                <ul className='flex flex-col items-center gap-6 text-[25px] overflow-hidden'>
                     <li className='mt-10'>
                 <TbDots />
             </li>

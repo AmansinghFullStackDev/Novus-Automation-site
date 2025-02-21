@@ -19,21 +19,23 @@ const MainHeader = ({ toggleSidebar }) => {
 
   const hanleOpen = () => setIsSearchModalOpen(!isSearchModalOpen);
 
+  const [isAppToggleOpen, setIsAppToggleOpen] = useState(false);
+
   return (
     <section className='h-full w-full flex items-center'
       style={{ fontFamily: '"Plus Jakarta Sans",sans-serif', color: '#5a6a85' }}>
 
-      {/* !st part */}
-      <ul className='flex gap-1' style={{ color: '#2a3547' }}>
+      {/* 1st part */}
+      <ul className='flex gap-0' style={{ color: '#2a3547' }}>
 
-        <li className='menu-icon h-16 w-16 flex items-center justify-center rounded-full hover:bg-[#5d87ff1a] hover:text-[#5d87ff]' onClick={toggleSidebar}>
-          <LuMenu className='text-[30px]' />
+        <li className='menu-icon h-12 w-12 flex items-center justify-center rounded-full hover:bg-[#5d87ff1a] hover:text-[#5d87ff]' onClick={toggleSidebar}>
+          <LuMenu className='text-[20px]' />
         </li>
 
-        <li className="search-icon h-16 w-16 flex items-center justify-center rounded-full hover:bg-[#5d87ff1a]"
+        <li className="search-icon h-12 w-12 flex items-center justify-center rounded-full hover:bg-[#5d87ff1a]"
           onClick={() => setIsSearchModalOpen(!isSearchModalOpen)}
         >
-          <GoSearch className="text-[30px] hover:text-[#5d87ff]" />
+          <GoSearch className="text-[20px] hover:text-[#5d87ff]" />
           <SearchModal
             isOpen={isSearchModalOpen}
             onClose={() => setIsSearchModalOpen(false)}
@@ -43,19 +45,22 @@ const MainHeader = ({ toggleSidebar }) => {
       </ul>
 
       {/* 2nd part */}
-      <div className='flex items-center justify-center gap-1 text-xl mx-6'>
-        <div className='h-12 w-28 flex items-center justify-center rounded-lg hover:bg-[#5d87ff1a] hover:text-[#5d87ff]'>
+      <div className='flex items-center justify-center text-base mx-4 gap-1'>
+        <button className='h-10 w-20 flex items-center justify-center rounded-lg gap-1
+         hover:bg-[#5d87ff1a] hover:text-[#5d87ff]'
+          onClick={() => setIsAppToggleOpen((prev) => !prev)}
+        >
           <h6>Apps</h6>
           <MdKeyboardArrowDown />
-        </div>
-        <ul className='flex items-center justify-center gap-10'>
+        </button>
+        <ul className='flex items-center justify-center gap-5'>
           <li className='flex items-center justify-center p-2'>
             <h6 className='hover:text-[#5d87ff]'>Chat</h6>
           </li>
-          <li className='h-16 w-16 flex items-center justify-center p-2'>
+          <li className='flex items-center justify-center p-2'>
             <h6 className='hover:text-[#5d87ff]'>Calendar</h6>
           </li>
-          <li className='h-16 w-16 flex items-center justify-center p-2'>
+          <li className='flex items-center justify-center p-2'>
             <h6 className='hover:text-[#5d87ff]'>Email</h6>
           </li></ul>
 

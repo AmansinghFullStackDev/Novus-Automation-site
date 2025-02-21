@@ -38,7 +38,7 @@ const MainSidebar = () => {
       </div>
 
       {/* for sidebar content */}
-      <div className='h-full w-full px-6 py-8 text-[30px] space-y-12 max-h-screen overflow-hidden hover:overflow-y-auto 
+      <div className='h-full w-full px-6 py-8 text-[20px] space-y-12 max-h-screen overflow-hidden hover:overflow-y-auto 
       [&::-webkit-scrollbar]:w-2
   [&::-webkit-scrollbar-track]:rounded-full
   [&::-webkit-scrollbar-track]:bg-gray-100
@@ -290,7 +290,7 @@ const MainSidebar = () => {
 
       {/*for sidebar user dashboard */}
       <div className='mb-2 rounded px-7'>
-        <div className='flex items-center justify-center gap-4 bg-[#49beff1a] py-3 rounded-xl'>
+        <div className='flex items-center justify-center gap-2 mt-3 bg-[#49beff1a] py-3 rounded-xl'>
 
           {/* image */}
           <div className=''>

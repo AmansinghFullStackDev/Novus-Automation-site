@@ -33,7 +33,7 @@ const ExpandSidebar = () => {
             </div>
 
             {/* for sidebar content */}
-            <div className='h-full w-full px-6 py-8 text-[30px] space-y-12 max-h-screen hover:overflow-y-auto 
+            <div className='h-full w-full px-6 py-8 text-[20px] space-y-12 max-h-screen hover:overflow-y-auto 
                   [&::-webkit-scrollbar]:w-2
               [&::-webkit-scrollbar-track]:rounded-full
               [&::-webkit-scrollbar-track]:bg-gray-100
